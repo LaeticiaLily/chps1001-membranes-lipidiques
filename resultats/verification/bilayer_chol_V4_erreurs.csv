@@ -1,0 +1,4 @@
+numero_molecule,type,feuillet_reference,feuillet_trouve,statut,x_nm,y_nm,z_nm,distance_surface_mediane_nm,orientation_cos
+3633,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,3.83,0.11,3.19,-0.25,-0.37
+14410,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,6.00,4.91,4.20,+0.21,+0.20
+14491,CHOL,membrane_1_leaflet_1,membrane_1_leaflet_2,mauvais_feuillet,14.42,0.78,2.78,+0.37,+0.04

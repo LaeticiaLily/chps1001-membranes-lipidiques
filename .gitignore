@@ -1,0 +1,23 @@
+# environnements et binaires (recrees par installer.sh)
+.venv/
+.venv-fatslim/
+bin/
+lib/
+__pycache__/
+*.pyc
+# archives et livrables generes
+livrables/
+Projet3.zip
+# donnees fournies par l'enseignant (non publiees) et documents dont nous n'avons pas les droits
+Surfactine-R1/
+2026_CHPS1001_Projet_Analyse_de_Membranes_Lipidiques.pdf
+doc_Projet/*.pdf
+# fichiers temporaires
+*.aux
+*.log
+*.out
+*.toc
+.*_offsets.npz
+.*_offsets.lock
+resultats/relance_log.txt
+resultats/benchmark_log.txt

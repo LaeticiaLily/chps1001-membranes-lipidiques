@@ -1,0 +1,29 @@
+Trajectoire               : Surfactine-R1/prod.trr
+Trames / atomes / lipides : 61 / 83095 / 3040
+Lecture des trames (I/O, MDAnalysis) : 543.4 ms (8.91 ms/trame)
+Detection des atomes de reference (1 fois) : 28.2 ms
+
+Temps d'analyse sur l'ensemble de la trajectoire (61 trames) :
+  V4 (version finale, 1 thread)     : total 78.14 ms, 1.281 ms/trame
+  V1 (graphe + seuil auto, 1 thread): total 145.92 ms, 2.392 ms/trame
+  LeafletFinder (15 A, PBC)         : total 5156.8 ms, 84.54 ms/trame
+  FATSLiM 1 thread                  : total 1883 ms (somme par trame), processus 2072 ms
+  FATSLiM 12 threads                 : total 2102 ms (somme par trame), processus 2370 ms
+
+Debit soutenu V4 (2196 trames = 36 passes, trames en memoire) :
+  sequentiel 1 thread      : 1.250 ms/trame -> 800 trames/s
+  12 trames en parallele   : 0.274 ms/trame -> 3645 trames/s
+  extrapolation 100 000 trames : 125.0 s (1 thread), 27.4 s (12 threads), hors lecture du fichier
+
+Fiabilite :
+  accord V4 / reference (trame 0)       : n/a
+  accord moyen V4 / FATSLiM             : 0.9975 (min 0.9934)
+  accord moyen V4 / LeafletFinder       : 0.5153
+  accord moyen V4 / V1                  : 0.9983
+  lipides changeant de feuillet entre trames (V4) : [186, 171, 196, 168, 186, 178, 177, 176, 166, 196, 184, 155, 189, 190, 183, 169, 195, 173, 170, 170, 174, 168, 185, 186, 193, 178, 169, 193, 162, 198, 184, 177, 181, 178, 189, 198, 191, 160, 156, 193, 187, 179, 188, 176, 173, 184, 168, 176, 181, 179, 187, 194, 175, 190, 185, 175, 186, 181, 196, 190]
+  tailles des feuillets (V4) : [(1507, 1533, 0), (1535, 1505, 0), (1534, 1506, 0), (1522, 1518, 0), (1530, 1510, 0), (1526, 1514, 0), (1530, 1510, 0), (1509, 1531, 0), (1523, 1517, 0), (1531, 1509, 0), (1513, 1527, 0), (1515, 1525, 0), (1510, 1530, 0), (1525, 1515, 0), (1525, 1515, 0), (1512, 1528, 0), (1527, 1513, 0), (1522, 1518, 0), (1507, 1533, 0), (1521, 1519, 0), (1529, 1511, 0), (1525, 1515, 0), (1535, 1505, 0), (1526, 1514, 0), (1510, 1530, 0), (1513, 1527, 0), (1513, 1527, 0), (1514, 1526, 0), (1523, 1517, 0), (1533, 1507, 0), (1541, 1499, 0), (1529, 1511, 0), (1532, 1508, 0), (1511, 1529, 0), (1507, 1533, 0), (1524, 1516, 0), (1528, 1512, 0), (1521, 1519, 0), (1515, 1525, 0), (1521, 1519, 0), (1524, 1516, 0), (1507, 1533, 0), (1498, 1542, 0), (1516, 1524, 0), (1512, 1528, 0), (1525, 1515, 0), (1517, 1523, 0), (1513, 1527, 0), (1509, 1531, 0), (1528, 1512, 0), (1507, 1533, 0), (1492, 1548, 0), (1518, 1522, 0), (1505, 1535, 0), (1527, 1513, 0), (1530, 1510, 0), (1503, 1537, 0), (1503, 1537, 0), (1514, 1526, 0), (1518, 1522, 0), (1520, 1520, 0)]
+  accord avec la reference geometrique (tete au-dessus/au-dessous du plan median), moyenne (min) :
+    V4             : 0.9964 (0.9875)
+    V1             : 0.9966 (0.9872)
+    LeafletFinder  : 0.5176 (0.4980)
+    FATSLiM        : 0.9963 (0.9875)

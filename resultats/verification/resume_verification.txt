@@ -1,0 +1,88 @@
+VERIFICATION LIPIDE PAR LIPIDE PAR RAPPORT AUX FICHIERS leaflets.txt FOURNIS
+corrects = dans le bon feuillet ; mauvais = dans l'autre feuillet ; non_ass. = non assigne ;
+parasites = dans un petit groupe en plus des 2 feuillets ; hors_ref = lipides absents de la reference
+
+=== bilayer_chol (1944 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                            1942        2         0          0        0   99.897%   CHOL:2
+  V2                            1940        4         0          0        0   99.794%   CHOL:4
+  V3                            1940        4         0          0        0   99.794%   CHOL:4
+  V4                            1941        3         0          0        0   99.846%   CHOL:3
+  V5                            1941        3         0          0        0   99.846%   CHOL:3
+  LeafletFinder_15A             1939        1         0          4        0   99.743%   CHOL:5
+  LeafletFinder_optimise        1939        1         0          4        0   99.743%   CHOL:5
+  FATSLiM                       1944        0         0          0        0  100.000%   
+=== bilayer_peptide (126 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                             126        0         0          0        0  100.000%   
+  V2                             126        0         0          0        0  100.000%   
+  V3                             126        0         0          0        0  100.000%   
+  V4                             126        0         0          0        0  100.000%   
+  V5                             126        0         0          0        0  100.000%   
+  LeafletFinder_15A              126        0         0          0        0  100.000%   
+  LeafletFinder_optimise         126        0         0          0        0  100.000%   
+  FATSLiM                        126        0         0          0        0  100.000%   
+=== bilayer_prot (112 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                             112        0         0          0        0  100.000%   
+  V2                             112        0         0          0        0  100.000%   
+  V3                             112        0         0          0        0  100.000%   
+  V4                             112        0         0          0        0  100.000%   
+  V5                             112        0         0          0        0  100.000%   
+  LeafletFinder_15A              112        0         0          0        0  100.000%   
+  LeafletFinder_optimise         112        0         0          0        0  100.000%   
+  FATSLiM                        112        0         0          0        0  100.000%   
+=== model_vesicle (2748 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                            2748        0         0          0        0  100.000%   
+  V2                            2748        0         0          0        0  100.000%   
+  V3                            2748        0         0          0        0  100.000%   
+  V4                            2748        0         0          0        0  100.000%   
+  V5                            2748        0         0          0        0  100.000%   
+  LeafletFinder_15A             2748        0         0          0        0  100.000%   
+  FATSLiM                       2748        0         0          0        0  100.000%   
+=== dppc_vesicle (3030 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                            3030        0         0          0       42  100.000%   
+  V2                            3030        0         0          0       42  100.000%   
+  V3                            3030        0         0          0       42  100.000%   
+  V4                            3030        0         0          0       42  100.000%   
+  V5                            3030        0         0          0       42  100.000%   
+  LeafletFinder_15A             3030        0         0          0       42  100.000%   
+  FATSLiM                       3030        0         0          0       42  100.000%   
+=== small_plasma_membrane (6664 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                            6649       15         0          0        0   99.775%   CHOL:15
+  V2                            6650       14         0          0        0   99.790%   CHOL:14
+  V3                            6650       14         0          0        0   99.790%   CHOL:14
+  V4                            6650       14         0          0        0   99.790%   CHOL:14
+  V5                            6650       14         0          0        0   99.790%   CHOL:14
+  LeafletFinder_15A             3436     3190         0         38        0   51.561%   CHOL:925 PIPC:281 POPE:198 POPC:191 PAPE:181 PAPS:160 PIPE:132 DAPE:115 DPSM:97 POPS:69 DOPE:66 PUPE:66 PUPS:62 PNSM:60 POPI:47 PAPC:45 XNSM:42 PIPI:42 PAPI:42 DXSM:39 PQPE:33 DUPE:33 BNSM:30 PIPS:27 DBSM:21 DOPC:17 PUPI:17 POPA:16 POP1:16 POP2:16 POP3:16 PQPS:13 PIPA:13 PAPA:13 PEPC:11 PUPC:11 PADG:8 DAPS:7 DUPS:7 PIDG:6 POSM:6 PGSM:6 PUPA:6 DPCE:5 DAPC:5 XNCE:3 PODG:3 DXCE:1 PNCE:1 PUDG:1
+  LeafletFinder_optimise        6561        4         0         99        0   98.454%   CHOL:98 PIDG:2 PADG:2 DAPS:1
+  FATSLiM                       6652       11         1          0        0   99.820%   CHOL:11 PADG:1
+=== large_plasma_membrane (19239 lipides de reference)
+  methode                   corrects  mauvais  non_ass.  parasites hors_ref    accord   erreurs par type
+  V1                           19185       54         0          0        0   99.719%   CHOL:52 PIDG:1 PUDG:1
+  V2                           19186       53         0          0        0   99.725%   CHOL:51 PIDG:1 PUDG:1
+  V3                           19191       48         0          0        0   99.751%   CHOL:46 PIDG:1 PUDG:1
+  V4                           19195       44         0          0        0   99.771%   CHOL:42 PIDG:1 PUDG:1
+  V5                           19200       39         0          0        0   99.797%   CHOL:38 PUDG:1
+  LeafletFinder_15A             9902     9256         0         81        0   51.468%   CHOL:2678 PIPC:810 POPE:569 POPC:550 PAPE:522 PAPS:461 PIPE:380 DAPE:332 DPSM:279 POPS:200 DOPE:190 PUPE:190 PUPS:180 PNSM:174 POPI:137 PAPC:129 XNSM:121 PIPI:120 PAPI:120 DXSM:113 PQPE:95 DUPE:95 BNSM:86 PIPS:79 DBSM:61 PUPI:51 DOPC:49 POP1:48 POP2:48 POP3:48 POPA:46 PQPS:39 PIPA:39 PAPA:39 PEPC:32 PUPC:32 DAPS:20 DUPS:20 PADG:17 POSM:17 PGSM:17 PUPA:17 DAPC:16 PNCE:13 PODG:13 DPCE:12 PIDG:10 XNCE:9 PUDG:8 DXCE:6
+  LeafletFinder_optimise       18891        5         0        343        0   98.191%   CHOL:335 PIDG:4 PUDG:3 PADG:1 PIPC:1 PAPE:1 DUPE:1 DPSM:1 PUPS:1
+  FATSLiM                      19239        0         0          0        0  100.000%   
+
+V4 : le fichier enregistre est identique au calcul refait maintenant pour : bilayer_chol, bilayer_peptide, bilayer_prot, model_vesicle, dppc_vesicle, small_plasma_membrane, large_plasma_membrane
+
+VERIFICATION SUR LA TRAJECTOIRE DU COURS (Surfactine-R1/prod_dt1000ns.xtc, 3040 lipides)
+Pas de fichier de reference : on compare V4, lipide par lipide, a FATSLiM, a V1 et a la position de la
+tete par rapport au plan median local (au-dessus = feuillet du haut).
+  trame 0 (t = 0 us) :
+    V4 different de FATSLiM                :    8 lipides (0.26 %)  types : {'CHOL': 8}
+    V4 different de V1                     :    4 lipides (0.13 %)  types : {'CHOL': 4}
+    V4 different de reference geometrique  :    5 lipides (0.16 %)  types : {'CHOL': 5}
+    lipides ou V4 et la reference geometrique different : |distance au plan median| mediane 0.14 nm (les feuillets sont a ~2 nm)
+  trame 20 (t = 20 us) :
+    V4 different de FATSLiM                :    2 lipides (0.07 %)  types : {'CHOL': 2}
+    V4 different de V1                     :    3 lipides (0.10 %)  types : {'CHOL': 3}
+    V4 different de reference geometrique  :    7 lipides (0.23 %)  types : {'CHOL': 7}
+    lipides ou V4 et la reference geometrique different : |distance au plan median| mediane 0.11 nm (les feuillets sont a ~2 nm)

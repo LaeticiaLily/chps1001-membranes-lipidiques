@@ -1,0 +1,105 @@
+{
+ "trajectoire": "trajectoire/dppc_vesicle.xtc",
+ "structure": "trajectoire/dppc_vesicle.gro",
+ "n_trames": 11,
+ "n_atomes": 36864,
+ "n_lipides": 3072,
+ "duree_ps": 5000.0,
+ "lecture_ms": 12.00537700788118,
+ "detection_tetes_ms": 25.07842100749258,
+ "V4_total_ms": 13.995803019497544,
+ "V4_ms_trame": 1.2723457290452314,
+ "V1_total_ms": 27.078367027570494,
+ "V1_ms_trame": 2.4616697297791355,
+ "LF_total_ms": 949.7681739885593,
+ "LF_ms_trame": 86.34256127168722,
+ "FATSLiM1_total_ms": 352.0,
+ "FATSLiM1_processus_ms": 527.0982240035664,
+ "FATSLiMN_total_ms": 517.0,
+ "FATSLiMN_processus_ms": 689.5856699993601,
+ "ncpu": 12,
+ "debit_trames": 2200,
+ "debit_seq_ms_trame": 1.2778237763599132,
+ "debit_par_ms_trame": 0.2587119586347729,
+ "extrapol_100k_seq_s": 127.78237763599132,
+ "extrapol_100k_par_s": 25.871195863477293,
+ "accord_ref_trame0": 1.0,
+ "accord_V4_FATSLiM_moy": 0.9997301214388237,
+ "accord_V4_FATSLiM_min": 0.9993403693931399,
+ "accord_V4_LF_moy": 0.986328125,
+ "accord_V4_V1_moy": 0.9998800473780212,
+ "changements": [
+  0,
+  1,
+  2,
+  1,
+  2,
+  0,
+  0,
+  0,
+  0,
+  1
+ ],
+ "tailles": [
+  [
+   1853,
+   1179,
+   40
+  ],
+  [
+   1853,
+   1179,
+   40
+  ],
+  [
+   1852,
+   1179,
+   41
+  ],
+  [
+   1852,
+   1179,
+   41
+  ],
+  [
+   1853,
+   1179,
+   40
+  ],
+  [
+   1851,
+   1179,
+   42
+  ],
+  [
+   1851,
+   1179,
+   42
+  ],
+  [
+   1851,
+   1179,
+   42
+  ],
+  [
+   1851,
+   1179,
+   42
+  ],
+  [
+   1851,
+   1179,
+   42
+  ],
+  [
+   1852,
+   1179,
+   41
+  ]
+ ],
+ "zref": {},
+ "exclus": [],
+ "tpr": null,
+ "temps_fin_ps": 5000.0,
+ "temps_debut_ps": 0.0
+}

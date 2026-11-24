@@ -1,0 +1,6 @@
+Analyse par type de lipide : Surfactine-R1/prod_dt1000ns.xtc (21 trames, V4)
+composition : {'PIPC': 1824, 'GCER': 608, 'CHOL': 608}
+changements de feuillet entre trames consecutives, moyenne par trame et par type : {'CHOL': 307.1}
+  |distance au plan median local| des lipides qui changent (nm) : mediane 1.38, 90e centile 1.78
+desaccords V4 / reference geometrique, moyenne par trame et par type : {'CHOL': 10.0}
+  |distance au plan median local| des desaccords (nm) : mediane 0.17, 90e centile 0.41, max 0.78

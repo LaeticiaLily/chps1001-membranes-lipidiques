@@ -1,0 +1,29 @@
+Trajectoire               : Surfactine-R1/prod_dt1000ns.xtc
+Trames / atomes / lipides : 21 / 83095 / 3040
+Lecture des trames (I/O, MDAnalysis) : 49.2 ms (2.34 ms/trame)
+Detection des atomes de reference (1 fois) : 28.9 ms
+
+Temps d'analyse sur l'ensemble de la trajectoire (21 trames) :
+  V4 (version finale, 1 thread)     : total 26.39 ms, 1.257 ms/trame
+  V1 (graphe + seuil auto, 1 thread): total 51.50 ms, 2.452 ms/trame
+  LeafletFinder (15 A, PBC)         : total 1762.9 ms, 83.95 ms/trame
+  FATSLiM 1 thread                  : total 643 ms (somme par trame), processus 838 ms
+  FATSLiM 12 threads                 : total 719 ms (somme par trame), processus 929 ms
+
+Debit soutenu V4 (2184 trames = 104 passes, trames en memoire) :
+  sequentiel 1 thread      : 1.267 ms/trame -> 789 trames/s
+  12 trames en parallele   : 0.273 ms/trame -> 3666 trames/s
+  extrapolation 100 000 trames : 126.7 s (1 thread), 27.3 s (12 threads), hors lecture du fichier
+
+Fiabilite :
+  accord V4 / reference (trame 0)       : n/a
+  accord moyen V4 / FATSLiM             : 0.9975 (min 0.9961)
+  accord moyen V4 / LeafletFinder       : 0.5227
+  accord moyen V4 / V1                  : 0.9985
+  lipides changeant de feuillet entre trames (V4) : [300, 315, 342, 302, 338, 286, 299, 281, 312, 289, 309, 315, 305, 320, 305, 284, 324, 307, 310, 299]
+  tailles des feuillets (V4) : [(1507, 1533, 0), (1529, 1511, 0), (1524, 1516, 0), (1520, 1520, 0), (1504, 1536, 0), (1522, 1518, 0), (1516, 1524, 0), (1519, 1521, 0), (1516, 1524, 0), (1518, 1522, 0), (1515, 1525, 0), (1514, 1526, 0), (1513, 1527, 0), (1532, 1508, 0), (1516, 1524, 0), (1517, 1523, 0), (1517, 1523, 0), (1533, 1507, 0), (1520, 1520, 0), (1522, 1518, 0), (1515, 1525, 0)]
+  accord avec la reference geometrique (tete au-dessus/au-dessous du plan median), moyenne (min) :
+    V4             : 0.9967 (0.9951)
+    V1             : 0.9969 (0.9951)
+    LeafletFinder  : 0.5238 (0.4984)
+    FATSLiM        : 0.9965 (0.9947)

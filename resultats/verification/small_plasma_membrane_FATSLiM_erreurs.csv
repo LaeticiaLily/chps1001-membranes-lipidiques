@@ -1,0 +1,13 @@
+numero_molecule,type,feuillet_reference,feuillet_trouve,statut,x_nm,y_nm,z_nm,distance_surface_mediane_nm,orientation_cos
+3057,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,13.17,22.00,4.75,-0.19,-0.09
+3172,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,18.43,40.80,5.23,+0.08,+0.01
+3415,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,11.87,21.55,4.87,-0.24,+0.08
+3530,CHOL,membrane_1_leaflet_1,membrane_1_leaflet_2,mauvais_feuillet,22.13,39.37,5.56,+0.42,+0.01
+3860,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,38.30,18.47,5.28,+0.07,+0.70
+3946,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,13.69,15.93,4.87,-0.05,-0.19
+4069,CHOL,membrane_1_leaflet_1,membrane_1_leaflet_2,mauvais_feuillet,7.77,3.25,5.29,+0.06,-0.89
+4209,CHOL,membrane_1_leaflet_1,membrane_1_leaflet_2,mauvais_feuillet,0.30,26.64,4.36,-0.63,+0.41
+4223,CHOL,membrane_1_leaflet_1,non_assigne,non_assigne,25.62,11.48,5.41,-0.12,-0.30
+4336,CHOL,membrane_1_leaflet_1,membrane_1_leaflet_2,mauvais_feuillet,41.00,25.99,4.48,-0.56,-0.57
+4354,CHOL,membrane_1_leaflet_2,membrane_1_leaflet_1,mauvais_feuillet,5.36,9.03,5.50,+0.41,-0.47
+6660,PADG,membrane_1_leaflet_1,membrane_1_leaflet_2,mauvais_feuillet,22.99,3.74,4.62,-0.28,-0.61

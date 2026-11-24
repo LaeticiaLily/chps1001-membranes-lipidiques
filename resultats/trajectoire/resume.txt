@@ -1,0 +1,24 @@
+Trajectoire               : trajectoire/dppc_vesicle.xtc
+Trames / atomes / lipides : 11 / 36864 / 3072
+Lecture des trames (I/O, MDAnalysis) : 12.0 ms (1.09 ms/trame)
+Detection des atomes de reference (1 fois) : 25.1 ms
+
+Temps d'analyse sur l'ensemble de la trajectoire (11 trames) :
+  V4 (version finale, 1 thread)     : total 14.00 ms, 1.272 ms/trame
+  V1 (graphe + seuil auto, 1 thread): total 27.08 ms, 2.462 ms/trame
+  LeafletFinder (15 A, PBC)         : total 949.8 ms, 86.34 ms/trame
+  FATSLiM 1 thread                  : total 352 ms (somme par trame), processus 527 ms
+  FATSLiM 12 threads                 : total 517 ms (somme par trame), processus 690 ms
+
+Debit soutenu V4 (2200 trames = 200 passes, trames en memoire) :
+  sequentiel 1 thread      : 1.278 ms/trame -> 783 trames/s
+  12 trames en parallele   : 0.259 ms/trame -> 3865 trames/s
+  extrapolation 100 000 trames : 127.8 s (1 thread), 25.9 s (12 threads), hors lecture du fichier
+
+Fiabilite :
+  accord V4 / reference (trame 0)       : 1.0000
+  accord moyen V4 / FATSLiM             : 0.9997 (min 0.9993)
+  accord moyen V4 / LeafletFinder       : 0.9863
+  accord moyen V4 / V1                  : 0.9999
+  lipides changeant de feuillet entre trames (V4) : [0, 1, 2, 1, 2, 0, 0, 0, 0, 1]
+  tailles des feuillets (V4) : [(1853, 1179, 40), (1853, 1179, 40), (1852, 1179, 41), (1852, 1179, 41), (1853, 1179, 40), (1851, 1179, 42), (1851, 1179, 42), (1851, 1179, 42), (1851, 1179, 42), (1851, 1179, 42), (1852, 1179, 41)]

@@ -1,0 +1,5 @@
+Clignotement sur prod1.xtc (1001 trames espacees de 5 ps) : lipides changeant d'assignation entre trames consecutives
+  V4       moyenne 4.83 par trame ; par type : {'CHOL': 4.83}
+  V3       moyenne 4.68 par trame ; par type : {'CHOL': 4.68}
+  V1       moyenne 4.33 par trame ; par type : {'CHOL': 4.33}
+  FATSLiM  moyenne 7.04 par trame ; par type : {'CHOL': 6.76, 'PIPC': 0.07, 'GCER': 0.21}
